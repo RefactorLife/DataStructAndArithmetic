@@ -8,6 +8,7 @@ void sort_main()
 		tag("sort");
 		printf("a.÷±Ω”≤Â»Î≈≈–Ú\n");
 		printf("b.’€∞Î≈≈–Ú\n");
+		printf("c.œ£∂˚≈≈–Ú(≤Â»Î≈≈–Ú)\n");
 		while ((ch = getchar())=='\r');
 		flushall();//«Âø’ ‰»Îª∫≥Â«¯
 		switch(ch)
@@ -18,8 +19,9 @@ void sort_main()
 			case 'b':
 				half_insert_sort();
 				break;
-			case 'B':
 			case 'c':
+				hill_insert_sort();
+				break;
 			case 'C':
 			case 'D':
 			case 'd':
