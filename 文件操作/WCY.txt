@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "myFile.h"
+void main()
+{
+	//readFile();//Ë³Ğò¶ÁÈ¡Ö¸¶¨ÎÄ¼ş
+	//writFile();//Öğ×ÖĞ´ÈëÎÄ¼şÖĞ
+	copyFile();
+	system("pause");
+}
+ÿ
