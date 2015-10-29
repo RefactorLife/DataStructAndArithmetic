@@ -78,6 +78,7 @@
     <ClCompile Include="Common_test.cpp" />
     <ClCompile Include="copyFile.cpp" />
     <ClCompile Include="DataStructTest.cpp" />
+    <ClCompile Include="exchange_sort.cpp" />
     <ClCompile Include="insert_sort.cpp" />
     <ClCompile Include="LineStruct.cpp" />
     <ClCompile Include="main.cpp" />

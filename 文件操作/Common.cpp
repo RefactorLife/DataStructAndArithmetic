@@ -6,14 +6,14 @@
 #include <windows.h>
 /*颜色对应值： 
 　　0=黑色                8=灰色　　
-  　 1=蓝色                9=淡蓝色                　　                        
-　　2=绿色                10=淡绿色       0xa        　　
-　　3=湖蓝色          11=淡浅绿色        0xb　
+  　1=蓝色                9=淡蓝色                　　                        
+　　2=绿色                10=淡绿色        0xa        　　
+　　3=湖蓝色		      11=淡浅绿色      0xb　
 　　4=红色                12=淡红色        0xc　　
 　　5=紫色                13=淡紫色        0xd        　　
 　　6=黄色                14=淡黄色        0xe        　　
 　　7=白色                15=亮白色        0xf 
-　　也可以吧这些值设置成常量。
+　　也可以把这些值设置成常量。
 */
 void color(const unsigned short color1)
 {        /*仅限改变0-15的颜色;如果在0-15那么实现他的颜色   因为如果超过15后面的改变的是文本背景色。*/
@@ -57,16 +57,16 @@ void show_array_int(int e[],int n)
 {
 	for(int i=0;i<n;i++)
 	{
-		color(7);
+		color(WHIGHT);
 		printf("%d_",i);
-		color(11);
+		color(DIM_TINT_GREEN);
 		printf("%d",e[i]);
-		color(7);
+		color(WHIGHT);
 		printf("|");
 	}
 }
-
-void swamp_int(int *a,int *b)
+//交换两个Int型数据
+void swap_int(int *a,int *b)
 {
 	int temp;
 	temp=*a;
@@ -74,6 +74,11 @@ void swamp_int(int *a,int *b)
 	*b=temp;
 	return ;
 }
+void swamp_int(int *a,int *b)
+{
+	return swap_int(a,b);
+}
+
 int get_random_int(int min,int max)
 {
 	if(min>max)
@@ -105,9 +110,12 @@ double cal_time(double time)
 		return clock();
 	}else
 	{
-		color(14);
-		printf("\n%f/CPUs\n",clock()-time);
-		color(7);
 		return clock()-time;
 	}
+}
+void show_time_cost(double time)
+{
+		color(DIM_YELLOW);
+		printf("\n%f/CPUs\n",time);
+		color(WHIGHT);
 }

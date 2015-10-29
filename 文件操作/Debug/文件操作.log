@@ -1,10 +1,42 @@
-﻿生成启动时间为 2015-10-28 12:22:43。
+﻿生成启动时间为 2015-10-29 19:49:30。
      1>项目“G:\programForPostgraduateExam\DataStructAndArithmetic\文件操作\文件操作.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\文件操作.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         D:\Program Files\VC++\VC++安装目录\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt insert_sort.cpp
+         D:\Program Files\VC++\VC++安装目录\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Common.cpp Common_test.cpp LineStruct.cpp exchange_sort.cpp insert_sort.cpp main.cpp main_file.cpp main_sort.cpp readFile.cpp writeFile.cpp
+         Common.cpp
+     1>g:\programforpostgraduateexam\datastructandarithmetic\文件操作\common.cpp(39): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _flushall. See online help for details.
+                 d:\program files\vc++\vc++安装目录\vc\include\stdio.h(724) : 参见“flushall”的声明
+     1>g:\programforpostgraduateexam\datastructandarithmetic\文件操作\common.cpp(97): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+         正在生成代码...
+         正在编译...
+         writeFile.cpp
+     1>g:\programforpostgraduateexam\datastructandarithmetic\文件操作\writefile.cpp(12): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\vc++\vc++安装目录\vc\include\stdio.h(304) : 参见“scanf”的声明
+     1>g:\programforpostgraduateexam\datastructandarithmetic\文件操作\writefile.cpp(14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\vc++\vc++安装目录\vc\include\stdio.h(234) : 参见“fopen”的声明
+         readFile.cpp
+     1>g:\programforpostgraduateexam\datastructandarithmetic\文件操作\readfile.cpp(13): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\vc++\vc++安装目录\vc\include\stdio.h(304) : 参见“scanf”的声明
+     1>g:\programforpostgraduateexam\datastructandarithmetic\文件操作\readfile.cpp(15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\vc++\vc++安装目录\vc\include\stdio.h(234) : 参见“fopen”的声明
+         main_sort.cpp
+     1>g:\programforpostgraduateexam\datastructandarithmetic\文件操作\main_sort.cpp(15): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _flushall. See online help for details.
+                 d:\program files\vc++\vc++安装目录\vc\include\stdio.h(724) : 参见“flushall”的声明
+         main_file.cpp
+     1>g:\programforpostgraduateexam\datastructandarithmetic\文件操作\main_file.cpp(11): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _flushall. See online help for details.
+                 d:\program files\vc++\vc++安装目录\vc\include\stdio.h(724) : 参见“flushall”的声明
+         main.cpp
+     1>g:\programforpostgraduateexam\datastructandarithmetic\文件操作\main.cpp(16): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _flushall. See online help for details.
+                 d:\program files\vc++\vc++安装目录\vc\include\stdio.h(724) : 参见“flushall”的声明
          insert_sort.cpp
+         exchange_sort.cpp
+         LineStruct.cpp
+         Common_test.cpp
+     1>g:\programforpostgraduateexam\datastructandarithmetic\文件操作\common_test.cpp(7): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+     1>g:\programforpostgraduateexam\datastructandarithmetic\文件操作\common_test.cpp(20): warning C4996: 'flushall': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _flushall. See online help for details.
+                 d:\program files\vc++\vc++安装目录\vc\include\stdio.h(724) : 参见“flushall”的声明
+         正在生成代码...
        ManifestResourceCompile:
          所有输出均为最新。
        Link:
@@ -13,6 +45,7 @@
          Debug\Common_test.obj
          Debug\copyFile.obj
          Debug\DataStructTest.obj
+         Debug\exchange_sort.obj
          Debug\insert_sort.obj
          Debug\LineStruct.obj
          Debug\main.obj
@@ -34,4 +67,4 @@
 
 生成成功。
 
-已用时间 00:00:00.69
+已用时间 00:00:05.78

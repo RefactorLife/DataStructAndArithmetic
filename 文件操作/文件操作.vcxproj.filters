@@ -66,6 +66,9 @@
     <ClCompile Include="main_data.cpp">
       <Filter>源文件\DataStruct</Filter>
     </ClCompile>
+    <ClCompile Include="exchange_sort.cpp">
+      <Filter>源文件\sort\insertion</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="myFile.h">
