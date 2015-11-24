@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "Common.h"
 #include "sort.h"
 
@@ -95,15 +94,9 @@ void hill_insert_sort(int a[])
 	}
 }
 
-double insert_sort(char ch)
+void insert_sort(char ch,int a[])
 {
-	int a[LIMIT];
-	//计算时间
-	double time;
-	get_rand_array_int(a,MIN_NUM,MAX_NUM,LIMIT);//产生一个随机数组
-	printf("排序前数组--->\n");
-	show_array_int(a,LIMIT);
-	time = cal_time(0.0);
+	
 	switch(ch)
 	{
 		case 'a':	
@@ -118,11 +111,6 @@ double insert_sort(char ch)
 		default:
 			printf("unvalide operation!\n");
 	}
-	time = cal_time(time);
-	printf("排序后数组--->\n");
-	show_array_int(a,LIMIT);
-	show_time_cost(time);
-	return time;
 }
 
 

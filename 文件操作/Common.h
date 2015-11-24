@@ -9,6 +9,7 @@
 #define DIM_YELLOW 14
 #define DIM_BLUE 9
 #define DIM_TINT_GREEN 11
+#define RED 4
 bool isContinue();
 void tag(char str[200]);
 void show_array_int(int e[],int n);
@@ -19,6 +20,7 @@ int get_random_int(int min,int max);
 void Common_main_test();//用于Common中函数的测试
 void color(const unsigned short color1);
 void show_time_cost(double time);
+void show_warn(char str[]);
 double cal_time(double time);//用于计算一个算法所用时间
 
 /*颜色对应值： 

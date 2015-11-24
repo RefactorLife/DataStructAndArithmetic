@@ -32,6 +32,12 @@ void bubble(int a[])
 //插入排序
 int partition(int a[],int low,int high)
 {
+	//此函数功能找出a[low] 在范围内的位置，并插入 并把小于a[low]的向左扔 大于的向右
+	//  5 1 2 4 6 7 8 2
+	//  |->			  |找到第一个在此序列中的中间值
+	//    |          从最右边开始找到小于 5 的丢到a[low]处（high--）
+	//	  |->然后在左边找到大于 5 的 丢到a[high]处(low++)
+	//如此反复 直到 when(low>high) a[low] = 5
 	int privot = a[low];
 	while(low<high)
 	{
@@ -48,22 +54,15 @@ void quick_sort(int a[],int low,int high)
 	int pivot;
 	if(low<high)
 	{
-		pivot = partition(a,low,high);
-		quick_sort(a,low,pivot-1);
-		quick_sort(a,pivot+1,high);
+		pivot = partition(a,low,high);//找到a[low]序列中的位置
+		quick_sort(a,low,pivot-1);//以此位置为中点，左边继续排序
+		quick_sort(a,pivot+1,high);//右边也继续排序
 	}
 }
 
 
-double exchange_sort(char ch)
+void exchange_sort(char ch,int a[])
 {
-	int a[LIMIT];
-	//计算时间
-	double time=0;
-	get_rand_array_int(a,MIN_NUM,MAX_NUM,LIMIT);//产生一个随机数组
-	printf("排序前数组--->\n");
-	show_array_int(a,LIMIT);
-	time = cal_time(0.0);
 	switch(ch)
 	{
 		case 'a':	
@@ -71,16 +70,10 @@ double exchange_sort(char ch)
 			break;
 		case 'b':	
 			quick_sort(a,0,LIMIT-1);
-			tag("快速排序");
 			break;
 		default:
 			printf("unvalide operation!\n");
 	}
-	time = cal_time(time);
-	printf("排序后数组--->\n");
-	show_array_int(a,LIMIT);
-	show_time_cost(time);
-	return time;
 }
 
 

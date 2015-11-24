@@ -86,6 +86,7 @@
     <ClCompile Include="main_file.cpp" />
     <ClCompile Include="main_sort.cpp" />
     <ClCompile Include="readFile.cpp" />
+    <ClCompile Include="selection_sort.cpp" />
     <ClCompile Include="writeFile.cpp" />
   </ItemGroup>
   <ItemGroup>

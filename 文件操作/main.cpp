@@ -9,8 +9,8 @@ void main()
 	char ch;
 	while(1)
 	{
-		printf(" a.main_file();\n d.testLineStruct();\n");
-		printf(" y.sort_main();\n z.Common\n");
+		printf(" a.main_file();\n b.testLineStruct();\n");
+		printf(" c.sort_main();\n d.Common\n");
 		printf("--->");
 		while ((ch = getchar())=='\r');
 		flushall();//清空输入缓冲区
@@ -22,24 +22,18 @@ void main()
 				break;
 			case 'b':
 			case 'B':
-
-			case 'c':
-			case 'C':
-				
-			case 'D':
-			case 'd':
 				testLineStruct();
 				break;
-			case 'Y':
-			case 'y':
+			case 'C':
+			case 'c':
 				sort_main();
 				break;
-			case 'Z':
-			case 'z':
+			case 'D':
+			case 'd':
 				Common_main_test();
 				break;
 			default:
-				printf("unvalide operation!\n");
+				show_warn("输入有误~");
 		}
 		if(!isContinue())
 		{

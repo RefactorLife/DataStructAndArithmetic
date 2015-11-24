@@ -119,3 +119,10 @@ void show_time_cost(double time)
 		printf("\n%f/CPUs\n",time);
 		color(WHIGHT);
 }
+void show_warn(char str[])
+{
+		color(RED);
+		printf("\n%s\n",str);
+		color(WHIGHT);
+}
+
